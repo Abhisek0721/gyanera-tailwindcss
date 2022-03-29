@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- <script src="./tailwindcss.js"></script> -->
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./input.css">
+    <title>Gyan Era - Home</title>
+</head>
+<body onload="runJs()" class="bg-blue-50">
+
+    <nav class="px-4 py-2 justify-between bg-blue-700 flex flex-col lg:flex-row">
+        <div class="flex justify-between mx-2 md:mx-6">
+            <div class="logo font-semibold py-1 text-blue-200 md:text-white">
+                Gyan Era
+            </div>
+            <div class="toggle lg:hide" id="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="block hidden lg:flex" id="menus">
+            <a href="/"><li class="menu">Home</li></a>
+            <a href="./about.html"><li class="menu">About Us</li></a>
+            <a href="./contact.html"><li class="menu">Contact</li></a>
+            <a href="./blog.html"><li class="menu">Blog</li></a>
+            <div class="flex justify-around my-3 md:mt-1 md:my-0 md:mx-2">
+                <a href="./login.html"><li class="mx-3 md:mx-1"><button class="btn">Login</button></li></a>
+                <li class="mx-3 md:mx-1"><button class="btn">Signup</button></li>
+            </div>
+        </ul>
+    </nav>
+
+    <p class="text-sm sm:text-lg text-center mt-10 mb-4 mx-6">Want to know more about us? Feel free to contact us.</p>
+
+    <h1 class="text-2xl font-semibold text-center mb-10">Contact Us</h1>
+
+    <section class="block w-[90%] sm:w-[70%] md:w-[50%] mx-auto">
+        <form action="./contact.html" method="post">
+            <div class="flex justify-around  flex-col sm:flex-row mb-5">
+                <input type="text" name="fname" class="contact-field sm:mr-2" placeholder="First Name" required>
+                <input type="text" name="lname" class="contact-field sm:mxl-2"  placeholder="Last Name" required>
+            </div>
+
+            <div class="block">
+                <input type="email" name="email" class="contact-field" placeholder="Email" required>
+            </div>
+
+            <div class="block mt-2">
+                <label for="msg" class="text-lg">Message :</label>
+                <textarea name="message" id="msg" class="border-2 border-blue-600 px-3 py-2 outline-none w-[100%] max-h-[100px] min-h-[100px] resize-none" cols="30" rows="10" required></textarea>
+            </div>
+
+            <div class="block">
+                <button class="btn mt-5 w-[100%]" type="submit">Send</button>
+            </div>
+        </form>
+    </section>
+    
+
+    <footer>
+        <p class="text-black font-bold text-center mt-20">
+            &copy;
+            <a href="/">
+                Gyann Era
+            </a>
+        </p>
+    </footer>
+</body>
+</html>

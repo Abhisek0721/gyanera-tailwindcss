@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- <script src="./tailwindcss.js"></script> -->
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./input.css">
+    <title>Gyan Era - Home</title>
+</head>
+<body onload="runJs()" class="bg-blue-50">
+
+    <nav class="px-4 py-2 justify-between bg-blue-700 flex flex-col lg:flex-row">
+        <div class="flex justify-between mx-2 md:mx-6">
+            <div class="logo font-semibold py-1 text-blue-200 md:text-white">
+                Gyan Era
+            </div>
+            <div class="toggle lg:hide" id="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="block hidden lg:flex" id="menus">
+            <a href="/"><li class="menu">Home</li></a>
+            <a href="./about.html"><li class="menu">About Us</li></a>
+            <a href="./contact.html"><li class="menu">Contact</li></a>
+            <a href="./blog.html"><li class="menu">Blog</li></a>
+            <div class="flex justify-around my-3 md:mt-1 md:my-0 md:mx-2">
+                <a href="./login.html"><li class="mx-3 md:mx-1"><button class="btn">Login</button></li></a>
+                <li class="mx-3 md:mx-1"><button class="btn">Signup</button></li>
+            </div>
+        </ul>
+    </nav>
+
+    <section class="block w-[90%] sm:w-[70%] mx-auto">
+        <h1 class="text-2xl font-semibold text-center my-10">Blogs</h1>
+        <section id="category" class="my-16">
+            <h1 class="text-lg font-semibold mb-3">Top Categories : </h1>
+            <div class="options flex flex-col justify-center">
+                <select name="category" class="text-lg px-2 py-1  border-2 border-blue-900 outline-none cursor-pointer rounded-sm" id="select-category">
+                    <option value="programing" selected>Programming</option>
+                    <option value="business">Business</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="design">Design</option>
+                    <option value="photography">Photography</option>
+                    <option value="music">Music</option>
+                    <option value="personal-dev">Personal Development</option>
+                </select>
+            </div>
+        </section>
+        
+        <p class="text-sm sm:text-lg mt-10 mb-4 text-slate-600">Latest Articles</p>
+        
+        <div class="flex flex-col w-[100%]">
+            <!-- Start of Article -->
+            <div class="article">
+                <div class="w-[100%] p-2 rounded-md mr-5">
+                    <img src="./img/blog1.jpg" class="w-[100%] h-[200px] rounded-sm">
+                </div>
+                <div class="des-blog sm:my-4">
+                    <h1 class="font-bold text-lg mb-3">Why developers like to code at night ?</h1>
+                    <p class="pr-5">
+                        By working at night, developers can avoid as many 
+                        distractions as possible. Without the constant barrage
+                        of interruptions, they can spend a few solid hours 
+                        focusing on the task at hand and 
+                        be as productive as possible...
+                    </p>
+                </div>
+            </div>
+            <!-- End of Article -->
+
+            <!-- Start of Article -->
+            <div class="article">
+                <div class="w-[100%] p-2 rounded-md mr-5">
+                    <img src="./img/blog2.jpg" class="w-[100%] h-[200px] rounded-sm">
+                </div>
+                <div class="des-blog sm:my-4">
+                    <h1 class="font-bold text-lg mb-3">What makes Python a slow language ?</h1>
+                    <p class="mr-5">
+                        Python code is first compiled into python Byte Code. 
+                        The Byte Code interpreter conversion happens internally
+                        and most of it is hidden from the developer.
+                        Internally Python code is interpreted during run time
+                        rather than being compiled to native code 
+                        hence it is a bit slower...
+                    </p>
+                </div>
+            </div>
+            <!-- End of Article -->
+        </div>
+
+    </section>
+    
+
+    <footer>
+        <p class="text-black font-bold text-center mt-20">
+            &copy;
+            <a href="/">
+                Gyann Era
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
